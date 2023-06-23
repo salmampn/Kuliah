@@ -9,6 +9,7 @@ Nama    : Salma Manda Putri Nabilah
 Kelas   : HL
 Nilai   : 
 */
+
 typedef struct Student{
     char nama[50], prodi[20];
     int nilai;
