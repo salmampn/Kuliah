@@ -1,14 +1,11 @@
+// Salma Manda Putri Nabilah 00000077712
+// Quiz Week 14
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
 #include <unistd.h>
-
-/*
-Nama    : Salma Manda Putri Nabilah
-Kelas   : HL
-Nilai   : 
-*/
 
 typedef struct Student{
     char nama[50], prodi[20];
