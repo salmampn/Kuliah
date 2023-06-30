@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Alata");
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+* {
+  font-family: "Alata";
+}
+
+ul li a:hover {
+  transition-duration: 0.2s;
+  color: blueviolet;
+  font-size: 18px;
+}
+
+#logo img {
+  width: 80px;
+}
+
+#client .pic img {
+  width: 80%;
+}
+
+/* Testimonial */
+#testi #box {
+  background-color: #390e3d;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#profile {
+  padding-top: 2em;
+}
+#profile img {
+  width: 15%;
+  border-radius: 60px;
+}
+
+#subs #box {
+  background-color: rgb(92 17 113);
+}
+/* Akhir Testimonial */
+
+#info img {
+  width: 30px;
+}

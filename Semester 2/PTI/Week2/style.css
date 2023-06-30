@@ -1,0 +1,156 @@
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  font-family: "Segoe UI";
+  font-size: 14px;
+}
+
+#logo{
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 1em;
+  font-family: "Aclonica" ;
+  color: rgb(0, 0, 0);
+  text-shadow:2px 2px 5px rgb(219, 178, 123);
+}
+
+ul#nav {
+  position: sticky;
+  list-style-type: none;
+  top: 0;
+  margin: -8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+li a:hover{
+  background-color:#04AA6D;
+  font-size: 1.1em;
+}
+
+.active {
+  float: right;
+  color: rgb(0, 0, 0);
+  font-family: "Aclonica";
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+  padding: 12px 14px;
+  background-color: rgb(245, 212, 168);
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  background-color:#333;
+}
+
+/* file kontak.html */
+.name{
+  width: 98%;
+  background-color: #F9F5E7;
+  border: 1px solid #333;
+}
+
+.button {
+  width: 100%;
+  padding: 8px;
+  background-color: #F9F5E7;
+  border: 2px solid #555555;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #514f4f;
+  color: white;
+  font-size: 14px;
+}
+
+table.kontak {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* file portofolio.html */
+ul#pic li{
+  margin-bottom: 1em;
+  margin-left: auto;
+  list-style: none;
+  display: inline-block;
+  background-color: #555555;
+  padding: 1em;
+}
+
+ul#pic li:hover{
+  background-color: aqua;
+}
+
+/* file servis.html */
+table#servis{
+  margin: auto;
+  border: 1px solid rgb(76, 73, 73);
+  border-collapse: collapse;
+}
+
+th#title{
+  margin: 20px;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  background-color: rgb(237, 204, 161);
+}
+
+tr#first th{
+  border-bottom: 1px solid black;
+  padding: 4px;
+  background-color: antiquewhite;
+}
+
+td#lol{
+  border-bottom: 1px solid rgb(76, 73, 73) ;
+  padding-right: 4em;
+}
+
+/* file proses.html */
+img#gif{
+  display: block;
+  width:65%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1#proses{
+  font-family: "Allerta Stencil";
+}

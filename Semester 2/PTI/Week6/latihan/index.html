@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <link rel="javascript" href="latihan.js">
+  </head>
+  <body>
+
+    <div id="judul">
+      <h1>Contoh Penggunaan DOM</h1>
+    </div>
+
+    <div id="sisip"></div>
+    <div id="bungkus">
+      <ul id="menu">
+        <li><a href="index.html">Halaman Utama</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="testimonial.html">Testimonial</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div id="fungsi">
+      <h2>Fungsi DOM</h2>
+    </div>
+    <div id="coba-fungsi">
+      <ol>
+        <li><a onclick="Javascript:ubahNodeValue()">Ganti Node Value dari
+            Galeri</a></li>
+        <li><a onclick="Javascript:periksaProperti()">Periksa Properti dari
+            Menu ke-4</a></li>
+        <li><a href="Javascript:ubahAtribut()">Ganti Atribut dari link
+            Galeri</a></li>
+        <li><a href="Javascript:tambahAnak()">Menambah Anak Bontot</a></li>
+        <li><a href="Javascript:bikinKembaran()">Bikin Kembaran dari Galeri</a></li>
+        <li><a href="Javascript:sisipAnak()">Nyisipin Anak di antara Galeri
+            dan Testimonial</a></li>
+        <li><a href="Javascript:gantiAnak()">Ganti Node</a></li>
+      </ol>
+    </div>
+
+    <script type="text/javascript">
+      //Mengganti nodeValue
+      function ubahNodeValue(){
+        //Membuat pointer yang mengarah pada node yang mau diganti valuenya
+        a = document.getElementById("menu").getElementsByTagName("a")[3].firstChild;
+        //Ubah nodeValue dari node yang sedang aktif
+        a.nodeValue = "Foto";
+        b = "<p> Galeri berubah menjadi Foto</p>";
+        document.getElementById("sisip").innerHTML = b;
+      }
+
+      function periksaProperti(){
+        a = document.getElementById("menu").getElementsByTagName("a")[3].firstChild;
+        // Tampilkan properti dengan menyisipkannya pada elemen dengan ID "sisip"
+        b = "<p>nodeName: " + a.nodeName;
+        b += "<br>nodeType: " + a.nodeType;
+        b += "<br>nodeValue: " + a.nodeValue + "</p>";
+        document.getElementById("sisip").innerHTML = b;
+      }
+
+      function ubahAtribut(){
+        //Membuat pointer yang mengarah pada node yang mau di set atributnya
+        a = document.getElementById("menu").getElementsByTagName("li")[3].firstChild;
+        a.setAttribute("href", "http://facebook.com");
+        b = "<p>Link dari Galeri telah berunah dari galeri.html menjadi facebook.com</p>";
+        document.getElementById("sisip").innerHTML = b;
+      }
+
+      function tambahAnak(){
+        //Buat element <li>
+          a = document.createElement("li");
+          //Buat textNode
+          b = document.createTextNode("Tambah anak lagi");
+          //Jadikan b anak dari a ===>>> <li>Tambah anak lagi</li>
+          a.appendChild(b);
+
+          //Buat variable yang merupakan pointer mengarah ke node yang ingin kita jadikan sebagai parent dari node yang kita buat di atas
+          c = document.getElementById("menu");
+          //Jadikan a anak dari c ===>>> <ul id ="menu"><li>Tambah anak lagi</li>....
+          c.appendChild(a);
+          
+          d = "<p>Anak dari menu bertambah</p>";
+          document.getElementById("sisip").innerHTML = d;
+      }
+    </script>
+  </body>
+</html>

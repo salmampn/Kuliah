@@ -1,0 +1,112 @@
+<!-- Salma Manda Putri Nabilah -->
+<!-- 00000077712 - Week 7 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 | Salma Manda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar container-fluid">
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="#">
+          <h3 class="fw-bold">Chatty</h3>
+        </a>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Chatbox -->
+    <div id="chatBox"></div>
+    <!-- End of Chatbox -->
+
+    <!-- Message Section-->
+    <div id="msgBox">
+      <hr style="margin-top: 0" class="border-3"/>
+      <div class="container">
+        <div class="row">
+          <!-- Sender Box -->
+          <div class="msg col">
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Name</label>
+                <input type="text" class="form-control" id="namaTeman"/>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Message</label>
+                  <textarea class="form-control text-start" id="pesanTeman"
+                    rows="3">
+                  </textarea>
+                </div>
+                <div class="button text-center">
+                  <button type="button" class="btn btn-light px-4
+                    py-1" id="btnTeman">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of sender box -->
+
+          <!-- My box -->
+          <div class="msg col">
+            <form>
+              <div class="mb-3">
+                <label
+                  for="nama"
+                  class="form-label">
+                  Name
+                </label>
+                <input type="text" class="form-control" id="namaSaya"
+                  value="Me"
+                  placeholder="Me" disabled/>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="pesanSaya"
+                    rows="3">
+                  </textarea>
+                </div>
+                <div class="button text-center">
+                  <button type="button" class="btn btn-light px-4 py-1"
+                    id="btnSaya">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End of my box -->
+        </div>
+      </div>
+    </div>
+    <!-- End of Message Section -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

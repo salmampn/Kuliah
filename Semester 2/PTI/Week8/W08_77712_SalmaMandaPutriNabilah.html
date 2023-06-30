@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Week 8 | Salma Manda</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var randomColor1 = Math.floor(Math.random() * 9825314).toString(16);
+      var randomColor2 = Math.floor(Math.random() * 9825315).toString(16);
+      var randomColor3 = Math.floor(Math.random() * 9825316).toString(16);
+      var randomColor4 = Math.floor(Math.random() * 9825317).toString(16);
+      var randomColor5 = Math.floor(Math.random() * 9825318).toString(16);
+      var randomColor6 = Math.floor(Math.random() * 9825319).toString(16);
+
+      ReactDOM.render(
+        <div>
+        <h1 style = {{color: "#" + randomColor1}}>Hello World!</h1>
+        <p style = {{color: "#" + randomColor2}}>My Name is SALMA MANDA</p>
+        <p style = {{color: "#" + randomColor3}}>Iam a pretty human being</p>
+        <p style = {{color: "#" + randomColor4}}>I love to learn Javascript</p>
+        <p style = {{color: "#" + randomColor5}}>I am a super high quality student</p>
+        <p style = {{color: "#" + randomColor6}}>I am going to be a superstar</p>
+        </div>,
+        document.getElementById('root')
+      )
+    </script>
+
+  </body>
+</html>

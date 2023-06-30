@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Alata");
+
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+}
+
+* {
+  font-family: "Alata";
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #bed8ff;
+}
+
+#chatBox {
+  height: 350px;
+  padding-top: 1em;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#msgBox {
+  background-color: #bed8ff;
+}
+
+#isiPesanSaya {
+  background-color: #c7e3ff;
+  padding-top: 5px;
+}
+
+#isiPesanTeman {
+  background-color: #d6d6d6;
+  padding-top: 5px;
+}
+#kotakPesan {
+  padding-bottom: 10px;
+}
+
+.btn-light {
+  background-color: #fa7e7e;
+  border: 2px solid #fa7e7e;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.btn-light:hover {
+  background-color: #fffffe;
+  border: 2px solid #fa7e7e;
+  color: #fa7e7e;
+  transition: 0.2s;
+}

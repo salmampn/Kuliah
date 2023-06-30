@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Alata");
+
+@media (min-width: 1080px) {
+  .container {
+    width: 50%;
+  }
+}
+
+* {
+  font-family: "Alata";
+}
