@@ -1,8 +1,8 @@
-senin = prompt("Masukkan Kehadiran Mahasiswa di Hari Senin: ");
-selasa = prompt("Masukkan Kehadiran Mahasiswa di Hari Selasa: ");
-rabu = prompt("Masukkan Kehadiran Mahasiswa di Hari Rabu: ");
-kamis = prompt("Masukkan Kehadiran Mahasiswa di Hari Kamis: ");
-jumat = prompt("Masukkan Kehadiran Mahasiswa di Hari Jumat: ");
+var senin = prompt("Masukkan Kehadiran Mahasiswa di Hari Senin: ");
+var selasa = prompt("Masukkan Kehadiran Mahasiswa di Hari Selasa: ");
+var rabu = prompt("Masukkan Kehadiran Mahasiswa di Hari Rabu: ");
+var kamis = prompt("Masukkan Kehadiran Mahasiswa di Hari Kamis: ");
+var jumat = prompt("Masukkan Kehadiran Mahasiswa di Hari Jumat: ");
 
   function kehadiran(hari, jumlah){
     document.write(hari);
@@ -13,8 +13,8 @@ jumat = prompt("Masukkan Kehadiran Mahasiswa di Hari Jumat: ");
   }
 
 document.write("<b>GRAFIK JUMLAH KEHADIRAN MAHASISWA</b><br><br>");
-kehadiran("Senin: ", senin);
-kehadiran("Selasa: ", selasa);
-kehadiran("Rabu: ", rabu);
-kehadiran("Kamis: ", kamis);
-kehadiran("Jumat: ", jumat);
+kehadiran("Senin :", senin);
+kehadiran("Selasa :", selasa);
+kehadiran("Rabu :", rabu);
+kehadiran("Kamis :", kamis);
+kehadiran("Jumat :", jumat);

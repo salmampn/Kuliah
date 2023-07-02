@@ -1,11 +1,11 @@
-rumus = window.prompt("Hitung Luas / Keliling?");
+var rumus = window.prompt("Hitung Luas / Keliling?");
 
   while (rumus !== "luas" && rumus !== "keliling"){
     rumus = window.prompt("Hitung Luas / Keliling");
   }
 
-lebar = window.prompt("Lebar: ");
-panjang = window.prompt("Panjang: ");
+var lebar = window.prompt("Lebar: ");
+var panjang = window.prompt("Panjang: ");
         
   if (rumus == "luas") {
     luas = panjang*lebar;

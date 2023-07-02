@@ -1,7 +1,7 @@
 // Sender Message
 $("#btnTeman").click(function buttonTeman(){
-		nama = $("#namaTeman").val();
-		pesan = $("#pesanTeman").val();
+		var nama = $("#namaTeman").val();
+		var pesan = $("#pesanTeman").val();
 		
 		//Isi Pesan
 		var boxPesan = $("<div/>", {
@@ -27,8 +27,8 @@ $("#btnTeman").click(function buttonTeman(){
 // My message
 $("#btnSaya").click(function buttonSaya(){
 	var you = "you";
-	nama = $("#namaSaya").val();
-	pesan = $("#pesanSaya").val();
+	var nama = $("#namaSaya").val();
+	var pesan = $("#pesanSaya").val();
 
 		// Isi Pesan
 		var boxPesan = $("<div/>", {

@@ -1,8 +1,8 @@
-batas = window.prompt("Masukkan batas akhir: ");
+var batas = window.prompt("Masukkan batas akhir: ");
 
-  for(i = 2; i <= batas; i++){
-    prima = 1;
-    for(j = 2; j < i; j++){
+  for(var i = 2; i <= batas; i++){
+    var prima = 1;
+    for(var j = 2; j < i; j++){
       if (i%j === 0) {
         prima = 0;
       } 

@@ -1,11 +1,10 @@
-jumlahMhs = window.prompt("Jumlah");
+var jumlahMhs = window.prompt("Jumlah");
 
-  for (i = 1; i <= jumlahMhs; i++){
-    console.log('test');
-    nama = window.prompt('Nama');
-    uts = window.prompt('UTS');
-    uas = window.prompt('UAS');
-    tugas = window.prompt('Tugas');
+  for (var i = 1; i <= jumlahMhs; i++){
+    var nama = window.prompt('Nama');
+    var uts = window.prompt('UTS');
+    var uas = window.prompt('UAS');
+    var tugas = window.prompt('Tugas');
     computeNilai(uts, uas, tugas);
 
     document.write("<br><br>" + i + "." + nama + "<br>");
@@ -21,23 +20,23 @@ jumlahMhs = window.prompt("Jumlah");
   }
 
   function cekNilai(nilai){
-    if (nilai >= 85){
-      return "A";
-    } else if (nilai >= 80){
-      return "A-";
-    } else if (nilai >= 75) {
-      return "B+";
-    } else if (nilai >= 70){
-      return "B";
-    } else if (nilai >= 65) {
-      return "B-";
-    } else if (nilai >= 60){
-      return "C+";
-    } else if (nilai >= 55){
-      return "C";
-    } else if (nilai >= 45) {
-      return "D";
-    }else if(nilai < 45){
-      return "F";
-    }
+      if (nilai >= 85){
+        return "A";
+      } else if (nilai >= 80){
+        return "A-";
+      } else if (nilai >= 75) {
+        return "B+";
+      } else if (nilai >= 70){
+        return "B";
+      } else if (nilai >= 65) {
+        return "B-";
+      } else if (nilai >= 60){
+        return "C+";
+      } else if (nilai >= 55){
+        return "C";
+      } else if (nilai >= 45) {
+        return "D";
+      }else if(nilai < 45){
+        return "You failed";
+      }
   }
